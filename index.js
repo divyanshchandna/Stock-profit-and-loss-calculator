@@ -8,7 +8,7 @@ function calculateProfitOrLoss(){
     outputDiv.style.visibility = "visible";
     if(price.value && quantity.value && presentValue.value){
         if(Number(price.value) >0 && Number(quantity.value) > 0 && Number(presentValue.value) > 0){
-            var profit = (Number(presentValue.value) - Number(price.value)) * Number(quantity.value);
+            var profit = (Number(presentValue.value) - Number(price.value));
             if(profit > 0){
                 var profitPercentage = (profit/Number(price.value)) * 100;
                 outputDiv.style.color = "#22C55E";
